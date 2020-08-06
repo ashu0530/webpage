@@ -16,8 +16,16 @@ h2 {text-align: center;}
 </html>
 
 <pre>
- 
 <?php
+$cf_domain_name=`cat /var/www/html/domain_name.txt`; 
+echo <p style="text-align: right;"> </p> ME </br>;
+echo <img src='https://${cf_domain_name}' height=340 width=220 style='float:right'/>;
+?>
+</pre>
+<p><a href="https://www.linkedin.com/in/ashutosh-pandey-43b94b18b">Visit To My LinkedIn Profile :) </a></p>
+
+<pre>
+ <?php
 
 print "IP_ADDRESS_OF_INSTANCE";
 
@@ -115,11 +123,3 @@ print `ifconfig`;
 </html>
 
 
-<pre>
-<?php
-$cf_domain_name=`cat /var/www/html/domain_name.txt`; 
-echo "ME <br>";
-echo "<img src='https://${cf_domain_name}/project1_image.jpg' height=340 width=220 />";
-?>
-</pre>
-<p><a href="https://www.linkedin.com/in/ashutosh-pandey-43b94b18b">Visit To My LinkedIn Profile :) </a></p>
