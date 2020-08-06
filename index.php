@@ -16,11 +16,18 @@ h2 {text-align: center;}
 </html>
 
 <pre>
- <?php
+ 
+<?php
+
 print "IP_ADDRESS_OF_INSTANCE";
+
+
 print `ifconfig`;
  ?>
+ 
 </pre>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
