@@ -18,7 +18,7 @@ h2 {text-align: center;}
 <pre>
 <?php
 $cf_domain_name=`cat /var/www/html/domain_name.txt`; 
-echo <p style="text-align: right;"> </p> ME </br>;
+echo  "ME" </br>;
 echo <img src='https://${cf_domain_name}' height=340 width=220 style='float:right'/>;
 ?>
 </pre>
