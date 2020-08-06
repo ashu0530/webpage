@@ -113,3 +113,13 @@ print `ifconfig`;
     
 </body>
 </html>
+
+
+<pre>
+<?php
+$cf_domain_name=`cat /var/www/html/domain_name.txt`; 
+echo "ME <br>";
+echo "<img src='https://${cf_domain_name}/project1_image.jpg' height=340 width=220 />";
+?>
+</pre>
+<p><a href="https://www.linkedin.com/in/ashutosh-pandey-43b94b18b">Visit To My LinkedIn Profile :) </a></p>
