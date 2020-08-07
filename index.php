@@ -15,6 +15,65 @@ h2 {text-align: center;}
  </body>
 </html>
 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Slide in Overlay from the Bottom</h2>
+
+<div class="container">
+  <img src="file:///D:/pic1.jpg" alt="ME" class="image">
+  <div class="overlay">
+    <div class="text"><a href="https://www.linkedin.com/in/ashutosh-pandey-43b94b18b">Visit To My LinkedIn Profile :) </a></div>
+  </div>
+</div>
+
+</body>
+</html>
+
 <pre>
 <?php
 $cf_domain_name=`cat /var/www/html/domain_name.txt`; 
@@ -22,7 +81,7 @@ echo  "ME" </br>;
 echo <img src='https://${cf_domain_name}' height=340 width=220 style='float:right'/>;
 ?>
 </pre>
-<p><a href="https://www.linkedin.com/in/ashutosh-pandey-43b94b18b">Visit To My LinkedIn Profile :) </a></p>
+
 
 <pre>
  <?php
