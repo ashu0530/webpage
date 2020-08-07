@@ -62,7 +62,9 @@ h2 {text-align: center;}
 </head>
 <body>
 
-<h2>Slide in Overlay from the Bottom</h2>
+<pre>
+<?php
+$cf_domain_name=`cat /var/www/html/domain_name.txt`;
 
 <div class="container">
   <img src='https://${cf_domain_name}' alt="ME" height=340 width=220 class="image">
@@ -71,16 +73,15 @@ h2 {text-align: center;}
   </div>
 </div>
 
+?>
+</pre>
+ 
 </body>
 </html>
 
-<pre>
-<?php
-$cf_domain_name=`cat /var/www/html/domain_name.txt`; 
+ 
 
-echo <img src='https://${cf_domain_name}' height=340 width=220 />";
-?>
-</pre>
+
 
 
 <pre>
