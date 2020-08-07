@@ -65,7 +65,7 @@ h2 {text-align: center;}
 <h2>Slide in Overlay from the Bottom</h2>
 
 <div class="container">
-  <img src="file:///D:/pic1.jpg" alt="ME" class="image">
+  <img src='https://${cf_domain_name}' alt="ME" height=340 width=220 class="image">
   <div class="overlay">
     <div class="text"><a href="https://www.linkedin.com/in/ashutosh-pandey-43b94b18b">Visit To My LinkedIn Profile :) </a></div>
   </div>
@@ -77,8 +77,8 @@ h2 {text-align: center;}
 <pre>
 <?php
 $cf_domain_name=`cat /var/www/html/domain_name.txt`; 
-echo  "ME" </br>;
-echo <img src='https://${cf_domain_name}' height=340 width=220 style='float:right'/>;
+
+echo <img src='https://${cf_domain_name}' height=340 width=220 />";
 ?>
 </pre>
 
